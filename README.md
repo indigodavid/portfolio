@@ -1,56 +1,40 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Portfolio
 
-> Description the project.
+> In this repo I will display and advertise my capacities as a Full Stack Developer.
 
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- HTML
+- CSS
+- JS and more.
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://indigodavid.github.io/portfolio/)
 
 
 ## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
 
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
+Modern web browser.
+
 ### Setup
 
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
+Go to https://indigodavid.github.io/portfolio/
 
 ## Authors
 
-👤 **Author1**
+👤 **David Vera**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@indigodavid](https://github.com/indigodavid)
+- Twitter: [@indigo1987](https://twitter.com/indigo1987)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/david-vera-castillo-001b5756/)
 
 ## 🤝 Contributing
 
@@ -65,8 +49,8 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Microverse
+- My supportive family 😊
 
 ## 📝 License
 
