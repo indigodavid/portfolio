@@ -12,3 +12,30 @@ p {
 	margin: 0;
 }
 
+a,
+a:hover,
+a:visited,
+a:active {
+	color: #000;
+	text-decoration: none;
+}
+
+.menu-bar {
+	display: flex;
+	background-color: #3C3A39;
+	color: #fff;
+	height: 92px;
+	align-items: center;
+}
+
+.menu-bar a {
+	color:#fff;
+	font-family: 'Roboto', sans-serif;
+	margin: 0 30px;
+	flex: 1;
+	display: flex;
+}
+
+.menu {
+	justify-content: flex-end;
+}
