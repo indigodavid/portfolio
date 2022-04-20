@@ -31,6 +31,7 @@ a:active {
 .menu-bar a {
 	color:#fff;
 	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
 	margin: 0 30px;
 	flex: 1;
 	display: flex;
@@ -38,4 +39,14 @@ a:active {
 
 .menu {
 	justify-content: flex-end;
+}
+
+.intro {
+	display: flex;
+	background-color: #1C1A19;
+	background-image: url("../images/background@2x.png");
+	background-repeat: no-repeat;
+	background-position: bottom right;
+	background-size: auto 250px;
+	height: 590px;
 }
