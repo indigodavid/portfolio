@@ -4,13 +4,26 @@
   box-sizing: border-box;
 }
 
+:root {
+  --color-accent: #ff6b00;
+}
+
 body,
 h1,
 h2,
 h3,
 p {
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+}
+
+p {
+  font-family: 'Inter', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Crete Round', serif;
 }
 
 a,
@@ -62,7 +75,7 @@ img {
 }
 
 .intro h1 {
-  color: #ff6b00;
+  color: var(--color-accent);
   font-size: 56px;
   font-family: 'Crete Round', serif;
 }
@@ -71,6 +84,7 @@ img {
   font-size: 24px;
   line-height: 32px;
   font-weight: 700;
+  font-family: 'Roboto', sans-serif;
 }
 
 .intro p {
