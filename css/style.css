@@ -6,6 +6,9 @@
 
 :root {
   --color-accent: #ff6b00;
+  --color-text: #091e42;
+  --color-negative: #fff;
+  --bgr-negative: #1c1a19;
 }
 
 body,
@@ -14,16 +17,21 @@ h2,
 h3,
 p {
   margin: 0;
+  color: var(--color-text);
 }
 
-p {
+p,
+ul,
+a {
   font-family: 'Inter', sans-serif;
+  font-size: 16px;
 }
 
 h1,
 h2,
 h3 {
   font-family: 'Crete Round', serif;
+  font-weight: 400;
 }
 
 a,
@@ -36,19 +44,28 @@ a:active {
 
 img {
   max-width: 100%;
-  height: 100%;
+}
+
+main {
+  padding: 20% 10%;
+  display: flex;
+  flex-direction: column;
+}
+
+main h2 {
+  font-size: 32px;
 }
 
 .menu-bar {
   display: flex;
   background-color: #3c3a39;
-  color: #fff;
+  color: var(--color-negative);
   height: 92px;
   align-items: center;
 }
 
 .menu-bar a {
-  color: #fff;
+  color: var(--color-negative);
   font-size: 18px;
   margin: 0 30px;
   flex: 1;
@@ -61,33 +78,35 @@ img {
 
 .intro {
   display: flex;
-  background-color: #1c1a19;
+  background-color: var(--bgr-negative);
   background-image: url("../images/background@2x.png");
   background-repeat: no-repeat;
   background-position: bottom right;
   background-size: auto 250px;
   height: 590px;
-  color: #fff;
+  color: var(--color-negative);
   flex-direction: column;
   justify-content: center;
   padding: 0 10%;
   row-gap: 10px;
 }
 
-.intro h1 {
+.intro h1, #about-me h1 {
   color: var(--color-accent);
   font-size: 56px;
   font-family: 'Crete Round', serif;
 }
 
 .intro h2 {
+  color: var(--color-negative);
   font-size: 24px;
   line-height: 32px;
   font-weight: 700;
   font-family: 'Roboto', sans-serif;
 }
 
-.intro p {
+.intro p, #about-me p {
+  color: var(--color-negative);
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -103,4 +122,55 @@ img {
 
 .intro li {
   height: 20px;
+}
+
+.languages {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  gap: 12px;
+}
+
+.languages li {
+  border-style: solid;
+  border-color: #8993a4;
+  border-width: 1px;
+  padding: 10px 12px;
+  font-weight: 500;
+}
+
+.button {
+  padding: 10px 12px;
+  color: var(--color-negative);
+  background: none;
+  background-color: var(--color-accent);
+  text-align: center;
+}
+
+#projects {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.project > * {
+  z-index: 1;
+}
+
+.project img {
+  z-index: 0;
+}
+
+#about-me {
+  display: flex;
+  flex-direction: column;
+  color: var(--color-negative);
+  background: none;
+  background-color: var(--bgr-negative);
+  padding: 120px 10%;
 }
