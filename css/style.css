@@ -91,7 +91,7 @@ main h2 {
   row-gap: 10px;
 }
 
-.intro h1, #about-me h1 {
+.intro h1 {
   color: var(--color-accent);
   font-size: 56px;
   font-family: 'Crete Round', serif;
@@ -105,7 +105,7 @@ main h2 {
   font-family: 'Roboto', sans-serif;
 }
 
-.intro p, #about-me p {
+.intro p, .about-head p {
   color: var(--color-negative);
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
@@ -147,23 +147,40 @@ main h2 {
   text-align: center;
 }
 
+.fs {
+  align-self: flex-start;
+  margin-bottom: 120px;
+}
+
 #projects {
   display: grid;
+  gap: 20px;
   grid-template-columns: 1fr;
+  padding-bottom: 120px;
 }
 
 .project {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  background: none;
+  min-height: 386px;
+  color: var(--color-negative);
 }
 
-.project > * {
-  z-index: 1;
+.project h2,
+.project p,
+.project ul {
+  color: var(--color-negative);
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
-.project img {
-  z-index: 0;
+.project1 {
+  background-image: url("../images/placeholder@2x.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #about-me {
@@ -173,4 +190,45 @@ main h2 {
   background: none;
   background-color: var(--bgr-negative);
   padding: 120px 10%;
+}
+
+.about-head {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: var(--bgr-negative);
+  background-image: url("../images/about-me-background.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: auto 250px;
+  min-height: 590px;
+}
+
+.about-head h1 {
+  color: var(--color-accent);
+  font-size: 72px;
+  font-family: 'Crete Round', serif;
+}
+
+#about-me hr {
+  width: 100%;
+}
+
+.about-skills {
+  font-size: 32px;
+  text-align: center;
+  list-style: none;
+  line-height: 2;
+}
+
+.about-skills li > span {
+  color: var(--color-accent);
+}
+
+.about-list {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  font-size: 22px;
+  line-height: 2;
 }
