@@ -49,9 +49,13 @@ img {
 }
 
 main {
-  padding: 20% 10%;
+  padding: 20% 0;
   display: flex;
   flex-direction: column;
+}
+
+main > * {
+  padding: 0 10%;
 }
 
 main h2 {
@@ -236,7 +240,7 @@ a.button:disabled {
   color: var(--color-negative);
   background: none;
   background-color: var(--bgr-negative);
-  padding: 120px 10%;
+  padding: 120px 0;
 }
 
 .about-head {
@@ -249,6 +253,8 @@ a.button:disabled {
   background-position: bottom right;
   background-size: auto 250px;
   min-height: 590px;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .about-head h2 {
