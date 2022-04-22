@@ -9,6 +9,8 @@
   --color-text: #091e42;
   --color-negative: #fff;
   --bgr-negative: #1c1a19;
+  --color-pressed: #e05304;
+  --color-disabled: #5b5957;
 }
 
 body,
@@ -52,13 +54,14 @@ main {
   flex-direction: column;
 }
 
-#featured-project {
-  display: flex;
-  flex-direction: column;
+main h2 {
+  font-size: 40px;
 }
 
-main h2 {
-  font-size: 32px;
+main hr {
+  width: 100%;
+  margin-bottom: 80px;
+  margin-top: 40px;
 }
 
 .menu-bar {
@@ -145,12 +148,33 @@ main h2 {
   font-weight: 500;
 }
 
-.button {
-  padding: 10px 12px;
+a.button {
+  padding: 12px;
   color: var(--color-negative);
   background: none;
   background-color: var(--color-accent);
   text-align: center;
+  border: none;
+}
+
+a.button:hover {
+  background-color: var(--color-negative);
+  color: var(--color-accent);
+  border: 1px solid var(--color-accent);
+  padding: 11px;
+}
+
+a.button:active {
+  background-color: var(--color-pressed);
+  color: var(--color-negative);
+  border: 1px solid var(--color-pressed);
+}
+
+a.button:disabled {
+  background-color: var(--color-negative);
+  color: var(--color-disabled);
+  border: 1px solid var(--color-disabled);
+  padding: 11px;
 }
 
 .fs {
@@ -254,4 +278,14 @@ main h2 {
   text-align: center;
   font-size: 22px;
   line-height: 2;
+}
+
+#featured-project {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#featured-project h2 {
+  font-size: 36px;
 }
