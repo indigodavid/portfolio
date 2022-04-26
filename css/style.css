@@ -125,7 +125,8 @@ main hr {
   line-height: 24px;
 }
 
-.intro ul {
+.intro ul,
+.social-links {
   display: flex;
   gap: 20px;
   list-style: none;
@@ -133,7 +134,8 @@ main hr {
   margin: 0;
 }
 
-.intro li {
+.intro li,
+.social-links li {
   height: 20px;
 }
 
@@ -294,4 +296,27 @@ a.button:disabled {
 
 #featured-project h2 {
   font-size: 36px;
+}
+
+form {
+  padding-top: 120px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+form > * {
+  flex-basis: 100%;
+}
+
+form > input {
+  appearance: none;
+}
+
+#contact-form h2 {
+  font-size: 32px;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.2;
+  font-weight: 700;
+  text-align: center;
 }
