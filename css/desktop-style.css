@@ -1,0 +1,25 @@
+#navigation-links {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#menu {
+  display: none;
+}
+
+.intro {
+  background-image: url("../images/desktop-header.png");
+  background-position: right;
+  background-size: auto 100%;
+}
+
+.intro > * {
+  align-self: flex-start;
+  width: 50%;
+}
+
+.intro > .social-links {
+  position: absolute;
+  inset: auto 20px;
+  flex-direction: column;
+}
