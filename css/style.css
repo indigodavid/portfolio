@@ -267,6 +267,7 @@ button:disabled {
 .about-head {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 10px;
   background-color: var(--bgr-negative);
   background-image: url("../images/about-me-background.png");
@@ -311,6 +312,11 @@ button:disabled {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
 }
 
 #featured-project h2 {

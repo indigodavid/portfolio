@@ -23,3 +23,55 @@
   inset: auto 20px;
   flex-direction: column;
 }
+
+#featured-project {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
+}
+
+.fs {
+  margin-bottom: 0;
+}
+
+.featured-image {
+  flex: 2;
+}
+
+.content {
+  flex: 1;
+}
+
+#projects {
+  grid-template-columns: 1fr 1fr;
+}
+
+main > * {
+  padding: 0 7%;
+}
+
+.about-head > * {
+  width: 50%;
+}
+
+.about-head > .button {
+  width: auto;
+}
+
+.about-head {
+  background-image: url("../images/desktop-about.png");
+  background-position: center right;
+  background-size: auto 30%;
+}
+
+@media screen and (min-width: 1024px) {
+  
+  #projects {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .about-head {
+    background-size: auto 60%;
+  }
+
+}
