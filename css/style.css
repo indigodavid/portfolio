@@ -99,7 +99,7 @@ main hr {
   display: flex;
 }
 
-.menu {
+#menu {
   justify-content: flex-end;
 }
 
@@ -356,4 +356,24 @@ form > textarea {
 
 #contact-form > form > button {
   align-self: center;
+}
+
+#navigation-links {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media only screen and (min-width: 768px) {
+
+  #navigation-links {
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end;
+  }
+
+  #menu {
+    display: none;
+  }
 }
