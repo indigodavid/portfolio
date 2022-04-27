@@ -1,3 +1,7 @@
+main > * {
+  padding: 0 7%;
+}
+
 #navigation-links {
   display: flex;
   justify-content: flex-end;
@@ -46,10 +50,6 @@
   grid-template-columns: 1fr 1fr;
 }
 
-main > * {
-  padding: 0 7%;
-}
-
 .about-head > * {
   width: 50%;
 }
@@ -64,8 +64,38 @@ main > * {
   background-size: auto 30%;
 }
 
+.about-skills {
+  display: flex;
+  justify-content: space-around;
+}
+
+.about-list {
+  text-align: left;
+}
+
+.project1 > * {
+  display: none;
+}
+
+.project1 > a {
+  display: block;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+#contact-form h2 {
+  text-align: left;
+}
+
+#contact-form > * {
+  flex: 1;
+}
+
 @media screen and (min-width: 1024px) {
-  
   #projects {
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -73,5 +103,4 @@ main > * {
   .about-head {
     background-size: auto 60%;
   }
-
 }

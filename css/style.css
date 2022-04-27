@@ -324,7 +324,6 @@ button:disabled {
 }
 
 form {
-  padding-top: 120px;
   display: flex;
   flex-direction: column;
   row-gap: 20px;
@@ -348,16 +347,16 @@ form > textarea {
   border: none;
 }
 
+#contact-form {
+  padding-top: 120px;
+}
+
 #contact-form h2 {
   font-size: 32px;
   font-family: 'Inter', sans-serif;
   line-height: 1.2;
   font-weight: 700;
   text-align: center;
-}
-
-#contact-form > .social-links {
-  justify-content: center;
 }
 
 #contact-form > form > button {
@@ -369,4 +368,8 @@ form > textarea {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+#end > .social-links {
+  justify-content: center;
 }
