@@ -81,6 +81,23 @@ main > * {
   display: block;
 }
 
+.recent-header {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.recent-header h2 {
+  flex: 1;
+}
+
+.recent-header hr {
+  flex: 2;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
 #contact-form {
   display: flex;
   flex-direction: row;
