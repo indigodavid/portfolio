@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>David Vera's Portfolio</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/desktop-style.css" media="screen and (min-width: 768px)">
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -13,35 +14,48 @@
 <body>
     <header class="menu-bar">
         <a href="#" class="name">David Vera</a>
-        <a href="#" class="menu"><img src="./images/menu.svg" alt="Menu"></a>
+        <a href="#" id="menu"><img src="./images/menu.svg" alt="Menu"></a>
+        <nav>
+          <ul id="navigation-links">
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#about-me">About</a></li>
+            <li><a href="#contact-form">Contact</a></li>
+            <li><a href="#contact-form"><img src="./images/mail-bold.svg" alt="Contact"></a></li>
+          </ul>
+        </nav>
     </header>
     <section class="intro">
-        <h1>Hey There. I'm David</h1>
-        <h2>I'm a Software Developer</h2>
-        <p>I can help you build a product, feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
-            don’t hestiate to contact me.</p>
-        <ul class="social-links">
-            <li><a href="#"><img src="./images/github.svg" alt="GitHub"></a></li>
-            <li><a href="#"><img src="./images/linked-in.svg" alt="LinkedIn"></a></li>
-            <li><a href="#"><img src="./images/peace.svg" alt="Peace"></a></li>
-            <li><a href="#"><img src="./images/twitter.svg" alt="Twitter"></a></li>
-            <li><a href="#"><img src="./images/m.svg" alt="M"></a></li>
-        </ul>
+      <h1>Hey There. I'm David</h1>
+      <h2>I'm a Software Developer</h2>
+      <p>I can help you build a product, feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
+      <ul class="social-links">
+         <li><a href="#"><img src="./images/github.svg" alt="GitHub"></a></li>
+         <li><a href="#"><img src="./images/linked-in.svg" alt="LinkedIn"></a></li>
+         <li><a href="#"><img src="./images/peace.svg" alt="Peace"></a></li>
+         <li><a href="#"><img src="./images/twitter.svg" alt="Twitter"></a></li>
+         <li><a href="#"><img src="./images/m.svg" alt="M"></a></li>
+      </ul>
     </section>
     <main>
-      <h2>My Recent Works</h2>
-      <hr>
+      <div class="recent-header">
+        <div><h2>My Recent Works</h2></div>
+        <hr>
+      </div>
       <section id="featured-project">
-        <img src="images/featured-project.png" alt="Featured Project">
-        <h2>Multi-Post Stories</h2>
-        <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
-        <ul class="languages">
-          <li>css</li>
-          <li>html</li>
-          <li>bootstrap</li>
-          <li>Ruby</li>
-        </ul>
-        <a href="#" class="button fs">See Project</a>
+        <div class="featured-image">
+          <img src="images/featured-project.png" alt="Featured Project">
+        </div>
+        <div class="content">
+          <h2>Multi-Post Stories</h2>
+          <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
+          <ul class="languages">
+            <li>css</li>
+            <li>html</li>
+            <li>bootstrap</li>
+            <li>Ruby</li>
+          </ul>
+          <a href="#" class="button fs">See Project</a>
+        </div>
       </section>
       <section id="projects">
         <div class="project project1">
@@ -142,13 +156,17 @@
         </ul>
       </section>
       <section id="contact-form">
-        <form action="https://formspree.io/f/mgedpkpr" method="POST">
+        <div>
           <h2>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
+        </div>
+        <form action="https://formspree.io/f/mgedpkpr" method="POST">
           <input type="text" name="full-name" id="full-name" placeholder="Enter your full name please" maxlength="30" required>
           <input type="email" name="email" id="email" placeholder="Enter your email address" required>
-          <textarea name="message" id="message" cols="25" rows="6" required maxlength="500">Enter text here</textarea>
+          <textarea name="message" id="message" cols="25" rows="6" required maxlength="500" placeholder="Enter text here"></textarea>
           <button type="submit" class="button">Get in touch</button>
         </form>
+      </section>
+      <section id="end">
         <ul class="social-links">
           <li><a href="#"><img src="./images/github-dark.svg" alt="GitHub"></a></li>
           <li><a href="#"><img src="./images/linked-in-dark.svg" alt="LinkedIn"></a></li>

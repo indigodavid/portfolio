@@ -99,7 +99,7 @@ main hr {
   display: flex;
 }
 
-.menu {
+#menu {
   justify-content: flex-end;
 }
 
@@ -267,6 +267,7 @@ button:disabled {
 .about-head {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 10px;
   background-color: var(--bgr-negative);
   background-image: url("../images/about-me-background.png");
@@ -313,12 +314,16 @@ button:disabled {
   gap: 20px;
 }
 
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
 #featured-project h2 {
   font-size: 36px;
 }
 
 form {
-  padding-top: 120px;
   display: flex;
   flex-direction: column;
   row-gap: 20px;
@@ -342,6 +347,10 @@ form > textarea {
   border: none;
 }
 
+#contact-form {
+  padding-top: 120px;
+}
+
 #contact-form h2 {
   font-size: 32px;
   font-family: 'Inter', sans-serif;
@@ -350,10 +359,17 @@ form > textarea {
   text-align: center;
 }
 
-#contact-form > .social-links {
-  justify-content: center;
-}
-
 #contact-form > form > button {
   align-self: center;
+}
+
+#navigation-links {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#end > .social-links {
+  justify-content: center;
 }
