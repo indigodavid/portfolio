@@ -26,7 +26,7 @@ p,
 ul,
 a,
 button {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
 }
 
@@ -47,7 +47,7 @@ textarea {
 h1,
 h2,
 h3 {
-  font-family: 'Crete Round', serif;
+  font-family: "Crete Round", serif;
   font-weight: 400;
 }
 
@@ -121,7 +121,7 @@ main hr {
 .intro h1 {
   color: var(--color-accent);
   font-size: 56px;
-  font-family: 'Crete Round', serif;
+  font-family: "Crete Round", serif;
   animation-name: blur;
   animation-duration: 2s;
   animation-timing-function: ease-in-out;
@@ -132,7 +132,7 @@ main hr {
   font-size: 24px;
   line-height: 32px;
   font-weight: 700;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   opacity: var(--p);
   animation-name: blur-white;
   animation-duration: 3s;
@@ -142,7 +142,7 @@ main hr {
 .intro p,
 .about-head p {
   color: var(--color-negative);
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   line-height: 24px;
 }
@@ -190,6 +190,7 @@ button {
   background-color: var(--color-accent);
   text-align: center;
   border: none;
+  transition-duration: 0.4s;
 }
 
 a.button:hover,
@@ -231,6 +232,7 @@ button:disabled {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  transition-duration: 0.4s;
   background: none;
   min-height: 386px;
   color: var(--color-negative);
@@ -295,13 +297,13 @@ button:disabled {
 .about-head h2 {
   color: var(--color-accent);
   font-size: 72px;
-  font-family: 'Crete Round', serif;
+  font-family: "Crete Round", serif;
   overflow: hidden;
   border-right: 3px solid transparent;
-  white-space: nowrap; 
+  white-space: nowrap;
   animation-name: typewriter, cursor;
   animation-duration: 3.5s, 0.75s;
-  animation-timing-function: steps(10,end), step-end;
+  animation-timing-function: steps(10, end), step-end;
   animation-iteration-count: infinite, infinite;
 }
 
@@ -356,7 +358,7 @@ form > * {
 
 form > input,
 form > textarea {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   border: none;
   border-bottom: var(--color-disabled) solid 1px;
   padding: 12px;
@@ -373,7 +375,7 @@ form > textarea {
 
 #contact-form h2 {
   font-size: 32px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   line-height: 1.2;
   font-weight: 700;
   text-align: center;
