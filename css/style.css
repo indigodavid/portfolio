@@ -149,7 +149,7 @@ main hr {
 
 .intro p {
   animation-name: blur-white;
-  animation-duration: 3s;
+  animation-duration: 4s;
   animation-timing-function: ease-in-out;
 }
 
@@ -296,6 +296,13 @@ button:disabled {
   color: var(--color-accent);
   font-size: 72px;
   font-family: 'Crete Round', serif;
+  overflow: hidden;
+  border-right: 3px solid transparent;
+  white-space: nowrap; 
+  animation-name: typewriter, cursor;
+  animation-duration: 3.5s, 0.75s;
+  animation-timing-function: steps(10,end), step-end;
+  animation-iteration-count: infinite, infinite;
 }
 
 #about-me hr {
@@ -412,3 +419,24 @@ form > textarea {
   }
 }
 
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes cursor {
+  from {
+    border-color: transparent;
+  }
+  50% {
+    border-color: var(--color-accent);
+  }
+  to {
+    border-color: transparent;
+  }
+}
