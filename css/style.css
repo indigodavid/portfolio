@@ -122,6 +122,9 @@ main hr {
   color: var(--color-accent);
   font-size: 56px;
   font-family: 'Crete Round', serif;
+  animation-name: blur;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
 }
 
 .intro h2 {
@@ -130,6 +133,10 @@ main hr {
   line-height: 32px;
   font-weight: 700;
   font-family: 'Roboto', sans-serif;
+  opacity: var(--p);
+  animation-name: blur-white;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
 }
 
 .intro p,
@@ -138,6 +145,12 @@ main hr {
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
   line-height: 24px;
+}
+
+.intro p {
+  animation-name: blur-white;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
 }
 
 .intro ul,
@@ -373,3 +386,29 @@ form > textarea {
 #end > .social-links {
   justify-content: center;
 }
+
+/* Animations */
+@keyframes blur {
+  from {
+    color: transparent;
+    text-shadow: 0 0 15px var(--color-accent);
+  }
+
+  to {
+    color: var(--color-accent);
+    text-shadow: none;
+  }
+}
+
+@keyframes blur-white {
+  from {
+    color: transparent;
+    text-shadow: 0 0 10px var(--color-negative);
+  }
+
+  to {
+    color: var(--color-negative);
+    text-shadow: none;
+  }
+}
+
