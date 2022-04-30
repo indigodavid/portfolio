@@ -238,6 +238,10 @@ button:disabled {
   color: var(--color-negative);
 }
 
+.project:hover {
+  transform: scale(1.05);
+}
+
 .project h2,
 .project p,
 .project ul {
@@ -304,7 +308,7 @@ button:disabled {
   white-space: nowrap;
   animation-name: typewriter, cursor;
   animation-duration: 2s, 0.75s;
-  animation-timing-function: steps(24,end), step-end;
+  animation-timing-function: steps(24, end), step-end;
   animation-iteration-count: 15, infinite;
 }
 
@@ -436,9 +440,11 @@ form > textarea {
   from {
     border-color: transparent;
   }
+
   50% {
     border-color: var(--color-accent);
   }
+
   to {
     border-color: transparent;
   }
