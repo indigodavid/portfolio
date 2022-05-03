@@ -191,7 +191,7 @@ button {
   text-align: center;
   border: none;
   transition-duration: 0.4s;
-  font-weight: 900;
+  font-weight: 600;
 }
 
 a.button:hover,
