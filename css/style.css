@@ -253,25 +253,25 @@ button:disabled {
 
 .project1,
 .project4 {
-  background-image: url("../images/placeholder@2x.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), transparent), url("../images/placeholder@2x.png");
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat, no-repeat;
   background-size: cover;
 }
 
 .project2,
 .project5 {
-  background-image: url("../images/placeholder2.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), transparent), url("../images/placeholder2.png");
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat, no-repeat;
   background-size: cover;
 }
 
 .project3,
 .project6 {
-  background-image: url("../images/placeholder3.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), transparent), url("../images/placeholder3.png");
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat, no-repeat;
   background-size: cover;
 }
 
