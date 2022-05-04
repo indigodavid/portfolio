@@ -5,11 +5,11 @@
 }
 
 :root {
-  --color-accent: #ff6b00;
+  --color-accent: #e05304;
   --color-text: #091e42;
   --color-negative: #fff;
   --bgr-negative: #1c1a19;
-  --color-pressed: #e05304;
+  --color-pressed: #ff6b00;
   --color-disabled: #5b5957;
 }
 
@@ -191,6 +191,8 @@ button {
   text-align: center;
   border: none;
   transition-duration: 0.4s;
+  font-weight: 600;
+  font-size: 18px;
 }
 
 a.button:hover,
@@ -252,25 +254,25 @@ button:disabled {
 
 .project1,
 .project4 {
-  background-image: url("../images/placeholder@2x.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), transparent), url("../images/placeholder@2x.png");
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat, no-repeat;
   background-size: cover;
 }
 
 .project2,
 .project5 {
-  background-image: url("../images/placeholder2.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), transparent), url("../images/placeholder2.png");
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat, no-repeat;
   background-size: cover;
 }
 
 .project3,
 .project6 {
-  background-image: url("../images/placeholder3.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), transparent), url("../images/placeholder3.png");
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat, no-repeat;
   background-size: cover;
 }
 
@@ -399,6 +401,10 @@ form > textarea {
 
 #end > .social-links {
   justify-content: center;
+}
+
+.hidden {
+  display: none;
 }
 
 /* Animations */
