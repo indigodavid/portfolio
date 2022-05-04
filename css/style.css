@@ -5,11 +5,11 @@
 }
 
 :root {
-  --color-accent: #ff6b00;
+  --color-accent: #e05304;
   --color-text: #091e42;
   --color-negative: #fff;
   --bgr-negative: #1c1a19;
-  --color-pressed: #e05304;
+  --color-pressed: #ff6b00;
   --color-disabled: #5b5957;
 }
 
