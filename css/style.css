@@ -192,6 +192,7 @@ button {
   border: none;
   transition-duration: 0.4s;
   font-weight: 600;
+  font-size: 18px;
 }
 
 a.button:hover,
@@ -400,6 +401,10 @@ form > textarea {
 
 #end > .social-links {
   justify-content: center;
+}
+
+.hidden {
+  display: none;
 }
 
 /* Animations */

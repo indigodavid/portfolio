@@ -73,6 +73,13 @@ main > * {
   text-align: left;
 }
 
+.project1 {
+  background-image: url("../images/placeholder@2x.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .project1 > * {
   display: none;
 }
