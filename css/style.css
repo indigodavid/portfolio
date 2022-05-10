@@ -389,9 +389,14 @@ form > textarea {
   align-self: center;
 }
 
+nav {
+  width: 0;
+}
+
 #navigation-links {
-  transform: translateY(-100%);
-  display: none;
+  transform: translateX(100%);
+  transition-duration: 0.2s;
+  transition-property: transform;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -475,13 +480,12 @@ form > textarea {
     position: absolute;
     display: flex;
     transition: transform 0.2s;
-    transform: translateY(0);
+    transform: translateX(0);
     flex-direction: column;
     align-content: center;
     inset: 92px 0;
     height: 90vh;
     background-color: var(--color-menu);
- 
   }
 
   #navigation-links.nav-active .nav-link {
@@ -498,5 +502,9 @@ form > textarea {
 
   #logo.hidden {
     visibility: hidden;
+  }
+
+  nav.active {
+    width: auto;
   }
 }
