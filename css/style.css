@@ -89,6 +89,7 @@ main hr {
   color: var(--color-negative);
   height: 92px;
   align-items: center;
+  padding-right: 20px;
 }
 
 .menu-bar a {
@@ -99,8 +100,28 @@ main hr {
   display: flex;
 }
 
-#menu {
+#menu,
+#menu:hover,
+#menu:active {
   justify-content: flex-end;
+  width: 18px;
+  border: none;
+  background-color: transparent;
+  background-image: url(../images/menu.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#menu.menu-active {
+  background-image: url(../images/close.svg);
+}
+
+#navigation-links.nav-active {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 2;
+  border-bottom: 1px solid #6f6c6b;
+  display: flex;
 }
 
 .intro {
@@ -200,7 +221,6 @@ button:hover {
   background-color: var(--color-negative);
   color: var(--color-accent);
   border: 1px solid var(--color-accent);
-  padding: 11px;
 }
 
 a.button:active,
