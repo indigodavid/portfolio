@@ -119,6 +119,10 @@ main > * {
   flex: 1;
 }
 
+.menu-bar {
+  padding: 0 8%;
+}
+
 @media screen and (min-width: 1024px) {
   #projects {
     grid-template-columns: 1fr 1fr 1fr;
