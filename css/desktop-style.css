@@ -7,6 +7,12 @@ main > * {
   justify-content: flex-end;
 }
 
+#envelope img {
+  visibility: visible;
+  width: 21px;
+  background-color: white;
+}
+
 #menu {
   display: none;
 }
@@ -117,6 +123,10 @@ main > * {
 
 #contact-form > * {
   flex: 1;
+}
+
+.menu-bar {
+  padding: 0 8%;
 }
 
 @media screen and (min-width: 1024px) {

@@ -11,6 +11,7 @@
   --bgr-negative: #1c1a19;
   --color-pressed: #ff6b00;
   --color-disabled: #5b5957;
+  --color-menu: #3c3a39;
 }
 
 body,
@@ -85,10 +86,11 @@ main hr {
 
 .menu-bar {
   display: flex;
-  background-color: #3c3a39;
+  background-color: var(--color-menu);
   color: var(--color-negative);
   height: 92px;
   align-items: center;
+  padding-right: 20px;
 }
 
 .menu-bar a {
@@ -97,10 +99,6 @@ main hr {
   margin: 0 30px;
   flex: 1;
   display: flex;
-}
-
-#menu {
-  justify-content: flex-end;
 }
 
 .intro {
@@ -200,7 +198,6 @@ button:hover {
   background-color: var(--color-negative);
   color: var(--color-accent);
   border: 1px solid var(--color-accent);
-  padding: 11px;
 }
 
 a.button:active,
@@ -392,8 +389,18 @@ form > textarea {
   align-self: center;
 }
 
+nav {
+  width: 0;
+}
+
+#navigation-links #envelope {
+  display: inherit;
+}
+
 #navigation-links {
-  display: none;
+  transform: translateX(100%);
+  transition-duration: 0.2s;
+  transition-property: transform;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -404,6 +411,10 @@ form > textarea {
 }
 
 .hidden {
+  display: none;
+}
+
+#white-bar {
   display: none;
 }
 
@@ -453,5 +464,80 @@ form > textarea {
 
   to {
     border-color: transparent;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #menu,
+  #menu:hover,
+  #menu:active {
+    justify-content: flex-end;
+    width: 18px;
+    border: none;
+    background-color: transparent;
+    background-image: url(../images/menu.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  #menu.menu-active {
+    background-image: url(../images/close.svg);
+  }
+
+  #navigation-links.nav-active {
+    position: absolute;
+    display: flex;
+    transition: transform 0.2s;
+    transform: translateX(0);
+    flex-direction: column;
+    align-content: center;
+    inset: 92px 0;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--color-menu);
+  }
+
+  #navigation-links.nav-active .nav-link {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 3;
+    border-bottom: 1px solid #6f6c6b;
+    padding-left: 20px;
+  }
+
+  #envelope.active {
+    visibility: hidden;
+  }
+
+  #logo.hidden {
+    visibility: hidden;
+  }
+
+  #white-bar.active {
+    display: block;
+    background-color: var(--color-negative);
+    position: absolute;
+    width: 100%;
+    height: 15%;
+    bottom: 0;
+  }
+
+  #white-bar.active > span {
+    content: "";
+    display: block;
+    margin-top: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: #000 solid 3px;
+    width: 30%;
+  }
+
+  nav.active {
+    width: auto;
+  }
+
+  header.active {
+    position: fixed;
+    width: 100%;
   }
 }
