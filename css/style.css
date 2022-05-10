@@ -390,7 +390,8 @@ form > textarea {
 }
 
 #navigation-links {
-  display: none;
+  transform: translateY(-100%);
+  /* display: none; */
   list-style: none;
   margin: 0;
   padding: 0;
@@ -473,6 +474,8 @@ form > textarea {
   #navigation-links.nav-active {
     position: absolute;
     display: flex;
+    transition: transform 0.2s;
+    transform: translateY(0);
     flex-direction: column;
     align-content: center;
     inset: 92px 0;
