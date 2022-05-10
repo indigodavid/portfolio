@@ -11,6 +11,7 @@
   --bgr-negative: #1c1a19;
   --color-pressed: #ff6b00;
   --color-disabled: #5b5957;
+  --color-menu: #3c3a39;
 }
 
 body,
@@ -85,7 +86,7 @@ main hr {
 
 .menu-bar {
   display: flex;
-  background-color: #3c3a39;
+  background-color: var(--color-menu);
   color: var(--color-negative);
   height: 92px;
   align-items: center;
@@ -97,30 +98,6 @@ main hr {
   font-size: 18px;
   margin: 0 30px;
   flex: 1;
-  display: flex;
-}
-
-#menu,
-#menu:hover,
-#menu:active {
-  justify-content: flex-end;
-  width: 18px;
-  border: none;
-  background-color: transparent;
-  background-image: url(../images/menu.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-#menu.menu-active {
-  background-image: url(../images/close.svg);
-}
-
-#navigation-links.nav-active {
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 2;
-  border-bottom: 1px solid #6f6c6b;
   display: flex;
 }
 
@@ -473,5 +450,49 @@ form > textarea {
 
   to {
     border-color: transparent;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #menu,
+  #menu:hover,
+  #menu:active {
+    justify-content: flex-end;
+    width: 18px;
+    border: none;
+    background-color: transparent;
+    background-image: url(../images/menu.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  #menu.menu-active {
+    background-image: url(../images/close.svg);
+  }
+
+  #navigation-links.nav-active {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    inset: 92px 0;
+    height: 90vh;
+    background-color: var(--color-menu);
+  }
+
+  #navigation-links.nav-active .nav-link {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 3;
+    border-bottom: 1px solid #6f6c6b;
+    padding-left: 20px;
+  }
+
+  #navigation-links.nav-active #envelope {
+    display: none;
+  }
+
+  #logo.hidden {
+    visibility: hidden;
   }
 }
