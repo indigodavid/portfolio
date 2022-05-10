@@ -7,6 +7,12 @@ main > * {
   justify-content: flex-end;
 }
 
+#envelope img {
+  visibility: visible;
+  width: 21px;
+  background-color: white;
+}
+
 #menu {
   display: none;
 }
