@@ -1,8 +1,68 @@
+const projectData=[
+  {
+    name: "Multi-Post Stories",
+    image: "./images/featured-project.png ",
+    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
+    languages: [
+      "html",
+      "css",
+      "bootstap",
+      "Ruby"
+    ],
+    liveUrl: "",
+    sourceUrl: ""
+  },
+  {
+    name: "Professional Art Printing Data",
+    image: "./images/placeholder-professional.png",
+    description: "",
+    languages: [],
+    liveUrl:"",
+    sourceUrl:""
+  },
+  {
+    name: "Data Dashboard Healthcare",
+    image: "./images/placeholder-availability.png",
+    description: "",
+    languages: [],
+    liveUrl:"",
+    sourceUrl:""
+  },
+  {
+    name: "Website Portfolio",
+    image: "./images/placeholder-nature.png",
+    description: "",
+    languages: [],
+    liveUrl:"",
+    sourceUrl:""
+  },
+  {
+    name: "Professional Art Printing Data",
+    image: "./images/placeholder-professional.png",
+    description: "",
+    languages: [],
+    liveUrl:"",
+    sourceUrl:""
+  },
+  {
+    name: "Data Dashboard Healthcare",
+    image: "./images/placeholder-availability.png",
+    description: "",
+    languages: [],
+    liveUrl:"",
+    sourceUrl:""
+  },
+  {
+    name: "Website Portfolio",
+    image: "./images/placeholder-nature.png",
+    description: "",
+    languages: [],
+    liveUrl:"",
+    sourceUrl:""
+  }
+]
  
-
-
-
-class HtmlContents {
+ class HtmlContents {
 
   constructor(
     title = 'Website Portfolio', 
@@ -26,10 +86,10 @@ class HtmlContents {
 
 class Urls {
   constructor (
-    imageUrl = './images/placeholder-availability.png', 
-    imageAlt = 'Project preview', 
+    imageUrl = './images/placeholder-availability.png',  
     liveUrl = 'https://indigodavid.github.io/portfolio/', 
-    sourceUrl = 'https://github.com/indigodavid/portfolio') {
+    sourceUrl = 'https://github.com/indigodavid/portfolio',
+    imageAlt = 'Project preview') {
     this.imageUrl = imageUrl;
     this.liveUrl = liveUrl;
     this.sourceUrl = sourceUrl;
@@ -83,48 +143,39 @@ class Technologies {
   }
 }
 
-const projects = [];
+function createModalLink(index){
+  let anchor = document.createElement('a');
+  anchor.classList.add('button');
+  anchor.href = `openModal(${index})`;
+  anchor.innerText = 'See Project';
+  return anchor;
+}
 
 const project = {
   content: new HtmlContents(),
   urls: new Urls(),
   technologies: new Technologies(),
-  getProjectHtml: function () {
+  getProjectHtml: function (index) {
     let div;
     div = document.createElement('div');
     div.classList.add('project');
+    div.classList.add(`project${index}`)
     div.appendChild(this.content.getH2());
     div.appendChild(this.content.getP());
     div.appendChild(this.technologies.getUl());
+    div.appendChild(createModalLink(index));
+    div.style.backgroundImage = 'linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.95)), url(' + this.urls.imageUrl + ')';
     return div;
   }
 }
 
-projects.push(project);
-
-let test = document.getElementById('projects');
-let aux = projects[0].getProjectHtml();
-aux.classList.add('project3');
-aux.style.backgroundImage = 'linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.95)), url(' + projects[0].urls.imageUrl + ')';
-test.appendChild(aux);
-
-/* console.log(projects[0].getProjectHtml()); */
-
-
- const projectArray=[
-   {
-     name:"proect 1",
-     image:"./images/placeholder-availability.png ",
-     description:"project description",
-     languages:[
-       "html",
-       "css",
-       "bootstap",
-       "ruby"
-     ],
-     liveUrl:"",
-     sourceUrl:""
+let projectSection = document.getElementById('projects');
+for(let i = 0; i < projectData.length; i++) {
+  if(i === 0){
+    /* featured project */
+  } else {
+    project.content = new HtmlContents(projectData[i].name);
+    project.urls = new Urls(projectData[i].image);
+    projectSection.appendChild(project.getProjectHtml(i));
+  }
 }
- ]
-
-
