@@ -1,3 +1,7 @@
+ 
+
+
+
 class HtmlContents {
 
   constructor(
@@ -105,3 +109,22 @@ aux.style.backgroundImage = 'linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0
 test.appendChild(aux);
 
 /* console.log(projects[0].getProjectHtml()); */
+
+
+ const projectArray=[
+   {
+     name:"proect 1",
+     image:"./images/placeholder-availability.png ",
+     description:"project description",
+     languages:[
+       "html",
+       "css",
+       "bootstap",
+       "ruby"
+     ],
+     liveUrl:"",
+     sourceUrl:""
+}
+ ]
+
+
