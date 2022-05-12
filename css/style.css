@@ -344,7 +344,7 @@ button:disabled {
   display: flex;
   flex-direction: column;
   row-gap: 20px;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 #featured-project h2 {
@@ -548,11 +548,14 @@ nav {
   display: none;
   position: fixed;
   background-color: rgba(0, 0, 0, 0.6);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
   inset: 0 0;
   width: 100vw;
   height: 100vh;
-  padding: 10% 0;
+  padding: 5% 0;
   margin: 0;
+  overflow: scroll;
 }
 
 .modal {
@@ -570,7 +573,7 @@ nav {
 .link-container {
   display: flex;
   flex-direction: row;
-  gap: 20px;
+  gap: 6px;
   justify-self: flex-end;
 }
 
@@ -582,6 +585,7 @@ nav {
 
 .modal-close {
   font-size: 28px;
+  font-weight: 500;
   color: #67798e;
 }
 
@@ -601,7 +605,7 @@ nav {
 #live-link,
 #source-link {
   font-size: 17px;
-  font-weight: 300;
+  font-weight: 700;
   padding-right: 35px;
   background-position: 90%;
   background-size: 17px 17px;
