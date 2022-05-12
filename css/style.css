@@ -623,10 +623,9 @@ nav {
 .form-error {
   display: none;
   font-family: "Inter", sans-serif;
-  font-size: 1.2em;
+  font-size: 16px;
   color: var(--color-negative);
   background-color: #900;
-  border-radius: 10px;
   padding: 10px;
   text-align: center;
   align-content: center;
