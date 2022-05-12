@@ -619,3 +619,15 @@ nav {
 #source-link:hover {
   background-image: url(../images/github-orange.svg);
 }
+
+.form-error {
+  display: none;
+  font-family: "Inter", sans-serif;
+  font-size: 1.2em;
+  color: var(--color-negative);
+  background-color: #900;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  align-content: center;
+}

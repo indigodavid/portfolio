@@ -99,7 +99,8 @@
         <div>
           <h2>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
         </div>
-        <form action="https://formspree.io/f/mgedpkpr" method="POST">
+        <form id="form" action="https://formspree.io/f/mgedpkpr" method="POST">
+          <div class="form-error"></div>
           <label for="full-name" class="hidden">Full Name</label>
           <input aria-label="Full name" type="text" name="full-name" id="full-name" placeholder="Enter your full name please" maxlength="30" required>
           <label for="email" class="hidden">Email</label>
@@ -144,5 +145,6 @@
 
     <script src="./js/index.js" ></script>
     <script src="./js/projects.js" ></script>
+    <script src="./js/form.js" defer></script>
 </body>
 </html>
