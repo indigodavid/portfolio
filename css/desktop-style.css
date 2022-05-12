@@ -138,3 +138,14 @@ main > * {
     background-size: auto 60%;
   }
 }
+
+.modal {
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 10px;
+}
+
+.modal-header,
+#modal-languages {
+  flex-basis: 100%;
+}

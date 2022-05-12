@@ -343,6 +343,8 @@ button:disabled {
 .content {
   display: flex;
   flex-direction: column;
+  row-gap: 20px;
+  justify-content: space-between;
 }
 
 #featured-project h2 {
@@ -540,4 +542,80 @@ nav {
     position: fixed;
     width: 100%;
   }
+}
+
+.modal-container {
+  display: none;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.6);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  inset: 0 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 5% 0;
+  margin: 0;
+  overflow: scroll;
+}
+
+.modal {
+  background-color: #fff;
+  width: 90vw;
+  height: auto;
+  padding: 5%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 16px;
+}
+
+.link-container {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  justify-self: flex-end;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-close {
+  font-size: 28px;
+  font-weight: 500;
+  color: #67798e;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+  cursor: pointer;
+}
+
+#live-link {
+  background-image: url(../images/see-live.svg);
+}
+
+#source-link {
+  background-image: url(../images/github.svg);
+}
+
+#live-link,
+#source-link {
+  font-size: 17px;
+  font-weight: 700;
+  padding-right: 35px;
+  background-position: 90%;
+  background-size: 17px 17px;
+  background-repeat: no-repeat;
+}
+
+#live-link:hover {
+  background-image: url(../images/see-live-orange.svg);
+}
+
+#source-link:hover {
+  background-image: url(../images/github-orange.svg);
 }
