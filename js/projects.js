@@ -9,58 +9,82 @@ const projectData=[
       "bootstap",
       "Ruby"
     ],
-    liveUrl: "",
-    sourceUrl: ""
+    liveUrl: "https://indigodavid.github.io/portfolio/",
+    sourceUrl: "https://github.com/indigodavid/portfolio"
   },
   {
     name: "Professional Art Printing Data",
     image: "./images/placeholder-professional.png",
-    description: "",
-    languages: [],
-    liveUrl:"",
-    sourceUrl:""
+    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+    languages: [
+      "html",
+      "bootstap",
+      "Ruby"
+    ],
+    liveUrl: "https://indigodavid.github.io/portfolio/",
+    sourceUrl: "https://github.com/indigodavid/portfolio"
   },
   {
     name: "Data Dashboard Healthcare",
     image: "./images/placeholder-availability.png",
-    description: "",
-    languages: [],
-    liveUrl:"",
-    sourceUrl:""
+    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+    languages: [
+      "html",
+      "bootstap",
+      "Ruby"
+    ],
+    liveUrl: "https://indigodavid.github.io/portfolio/",
+    sourceUrl: "https://github.com/indigodavid/portfolio"
   },
   {
     name: "Website Portfolio",
     image: "./images/placeholder-nature.png",
-    description: "",
-    languages: [],
-    liveUrl:"",
-    sourceUrl:""
+    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+    languages: [
+      "html",
+      "bootstap",
+      "Ruby"
+    ],
+    liveUrl: "https://indigodavid.github.io/portfolio/",
+    sourceUrl: "https://github.com/indigodavid/portfolio"
   },
   {
     name: "Professional Art Printing Data",
     image: "./images/placeholder-professional.png",
-    description: "",
-    languages: [],
-    liveUrl:"",
-    sourceUrl:""
+    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+    languages: [
+      "html",
+      "bootstap",
+      "Ruby"
+    ],
+    liveUrl: "https://indigodavid.github.io/portfolio/",
+    sourceUrl: "https://github.com/indigodavid/portfolio"
   },
   {
     name: "Data Dashboard Healthcare",
     image: "./images/placeholder-availability.png",
-    description: "",
-    languages: [],
-    liveUrl:"",
-    sourceUrl:""
+    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+    languages: [
+      "html",
+      "bootstap",
+      "Ruby"
+    ],
+    liveUrl: "https://indigodavid.github.io/portfolio/",
+    sourceUrl: "https://github.com/indigodavid/portfolio"
   },
   {
     name: "Website Portfolio",
     image: "./images/placeholder-nature.png",
-    description: "",
-    languages: [],
-    liveUrl:"",
-    sourceUrl:""
+    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+    languages: [
+      "html",
+      "bootstap",
+      "Ruby"
+    ],
+    liveUrl: "https://indigodavid.github.io/portfolio/",
+    sourceUrl: "https://github.com/indigodavid/portfolio"
   }
-]
+];
  
  class HtmlContents {
 
@@ -108,7 +132,6 @@ class Urls {
     a.href = this.liveUrl;
     a.target = '_blank';
     a.classList.add('button');
-    a.classList.add('fs');
     a.classList.add('live-icon');
     a.innerText = 'See Live';
     return a;
@@ -119,7 +142,6 @@ class Urls {
     a.href = this.sourceUrl;
     a.target = '_blank';
     a.classList.add('button');
-    a.classList.add('fs');
     a.classList.add('source-icon');
     a.innerText = 'See Source';
     return a;
@@ -146,36 +168,68 @@ class Technologies {
 function createModalLink(index){
   let anchor = document.createElement('a');
   anchor.classList.add('button');
-  anchor.href = `openModal(${index})`;
+  if (index === 0) {
+    anchor.classList.add('fs');
+  }
+  anchor.href = `javascript:openModal(${index})`;
   anchor.innerText = 'See Project';
   return anchor;
 }
 
-const project = {
-  content: new HtmlContents(),
-  urls: new Urls(),
-  technologies: new Technologies(),
+let project = {
+  content: null,
+  urls: null,
+  technologies: null,
   getProjectHtml: function (index) {
     let div;
     div = document.createElement('div');
-    div.classList.add('project');
-    div.classList.add(`project${index}`)
+    if(index === 0){
+      div.classList.add('content');
+      document.getElementById('highlighted-image').src = this.urls.imageUrl;
+    } else {
+      div.classList.add('project');
+      div.classList.add(`project${index}`);
+      div.style.backgroundImage = 'linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.95)), url(' + this.urls.imageUrl + ')';
+    }
     div.appendChild(this.content.getH2());
     div.appendChild(this.content.getP());
     div.appendChild(this.technologies.getUl());
     div.appendChild(createModalLink(index));
-    div.style.backgroundImage = 'linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.95)), url(' + this.urls.imageUrl + ')';
     return div;
   }
 }
 
-let projectSection = document.getElementById('projects');
+const projectSection = document.getElementById('projects');
+const featuredContent = document.getElementById('featured-content');
 for(let i = 0; i < projectData.length; i++) {
+  project.content = new HtmlContents(projectData[i].name, projectData[i].description);
+  project.urls = new Urls(projectData[i].image);
+  project.technologies = new Technologies(projectData[i].languages);
   if(i === 0){
-    /* featured project */
+    featuredContent.appendChild(project.getProjectHtml(i));
   } else {
-    project.content = new HtmlContents(projectData[i].name);
-    project.urls = new Urls(projectData[i].image);
     projectSection.appendChild(project.getProjectHtml(i));
   }
 }
+
+const modal = document.getElementById('modal-container');
+const popup = document.getElementById('modal');
+const closePopup = document.getElementById('modal-close');
+
+function openModal(index) {
+  document.getElementById('modal-title').innerHTML = projectData[index].name;
+  document.getElementById('modal-languages').innerHTML = '';
+  let ulLanguages = new Technologies(projectData[index].languages);
+  document.getElementById('modal-languages').appendChild(ulLanguages.getUl());
+  document.getElementById('project-image').src = projectData[index].image;
+  document.getElementById('modal-description').textContent = projectData[index].description;
+  document.getElementById('live-link').href = projectData[index].liveUrl;
+  document.getElementById('source-link').href = projectData[index].sourceUrl;
+  modal.style.display = 'block';
+}
+
+function closeModal() {
+  modal.style.display = 'none';
+}
+
+closePopup.addEventListener('click', closeModal);

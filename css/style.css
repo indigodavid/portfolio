@@ -542,10 +542,48 @@ nav {
   }
 }
 
-.modal {
+.modal-container {
   display: none;
   position: fixed;
+  background-color: rgba(0, 0, 0, 0.6);
   inset: 0 0;
-  width: 100%;
+  width: 100vw;
+  height: 100vh;
+  padding: 10% 0;
+  margin: 0;
+}
+
+.modal {
+  background-color: #fff;
+  width: 90vw;
   height: 100%;
+  padding: 5%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 16px;
+}
+
+.link-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-self: flex-end;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-close {
+  font-size: 28px;
+  color: #67798e;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+  cursor: pointer;
 }
