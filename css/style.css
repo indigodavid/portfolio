@@ -343,6 +343,8 @@ button:disabled {
 .content {
   display: flex;
   flex-direction: column;
+  row-gap: 20px;
+  justify-content: space-around;
 }
 
 #featured-project h2 {
@@ -586,4 +588,30 @@ nav {
 .modal-close:hover,
 .modal-close:focus {
   cursor: pointer;
+}
+
+#live-link {
+  background-image: url(../images/see-live.svg);
+}
+
+#live-link:hover {
+  background-image: url(../images/see-live-orange.svg);
+}
+
+#source-link {
+  background-image: url(../images/github.svg);
+}
+
+#source-link:hover {
+  background-image: url(../images/github-orange.svg);
+}
+
+#live-link,
+#source-link {
+  font-size: 17px;
+  font-weight: 300;
+  padding-right: 35px; 
+  background-position: 90%;
+  background-size: 17px 17px;
+  background-repeat: no-repeat;
 }
