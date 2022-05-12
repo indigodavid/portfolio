@@ -558,7 +558,7 @@ nav {
 .modal {
   background-color: #fff;
   width: 90vw;
-  height: 100%;
+  height: auto;
   padding: 5%;
   margin: 0 auto;
   display: flex;
@@ -594,24 +594,24 @@ nav {
   background-image: url(../images/see-live.svg);
 }
 
-#live-link:hover {
-  background-image: url(../images/see-live-orange.svg);
-}
-
 #source-link {
   background-image: url(../images/github.svg);
-}
-
-#source-link:hover {
-  background-image: url(../images/github-orange.svg);
 }
 
 #live-link,
 #source-link {
   font-size: 17px;
   font-weight: 300;
-  padding-right: 35px; 
+  padding-right: 35px;
   background-position: 90%;
   background-size: 17px 17px;
   background-repeat: no-repeat;
+}
+
+#live-link:hover {
+  background-image: url(../images/see-live-orange.svg);
+}
+
+#source-link:hover {
+  background-image: url(../images/github-orange.svg);
 }
