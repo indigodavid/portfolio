@@ -625,7 +625,7 @@ nav {
   font-family: "Inter", sans-serif;
   font-size: 16px;
   color: var(--color-negative);
-  background-color: #900;
+  background-color: var(--color-accent);
   padding: 10px;
   text-align: center;
   align-content: center;

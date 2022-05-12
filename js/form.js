@@ -8,5 +8,5 @@ form.addEventListener('submit', (e) => {
     e.preventDefault();
     formError.style.display = 'block';
     formError.innerHTML = `Email should be written in lower case: ${email.value.toLowerCase()}`;
-  } 
+  }
 });
