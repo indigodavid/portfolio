@@ -11,10 +11,14 @@ function storeData() {
   localStorage.setItem('data', data);
 }
 
-function fillInputs() {
-  fullName.value = objectData.name;
-  email.value = objectData.email;
-  message.value = objectData.message;
+function fillInputs() { 
+   let objectData = JSON.parse(localStorage.getItem('data'));
+   if(objectData){
+    fullName.value = objectData.name;
+    email.value = objectData.email;
+    message.value = objectData.message;
+   }
+
 }
 
 form.addEventListener('keyup', (e) => {
@@ -30,14 +34,8 @@ form.addEventListener('keyup', (e) => {
   storeData();
 });
 
-form.addEventListener('load', (e) => {
-  let objectData = JSON.parse(localStorage.getItem('data'));
-  if(objectData) {
-    fillInputs();
-  }
-});
 
-//LowerCase Validator
+
 form.addEventListener('submit', (e) => {
   const lowerCaseRegex = /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+(?:\.[a-z0-9-]+)*$/;
   if (!lowerCaseRegex.test(email.value)) {
@@ -47,3 +45,5 @@ form.addEventListener('submit', (e) => {
   }
 });
 
+
+fillInputs();
