@@ -12,11 +12,11 @@ function storeData() {
 }
 
 function fillInputs() { 
-   let objectData = JSON.parse(localStorage.getItem('data'));
-   if(objectData){
-    fullName.value = objectData.name;
-    email.value = objectData.email;
-    message.value = objectData.message;
+   let storagedData = JSON.parse(localStorage.getItem('data'));
+   if(storagedData){
+    fullName.value = storagedData.name;
+    email.value = storagedData.email;
+    message.value = storagedData.message;
    }
 
 }
