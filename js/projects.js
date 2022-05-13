@@ -2,6 +2,7 @@ const projectSection = document.getElementById('projects');
 const featuredContent = document.getElementById('featured-content');
 const modal = document.getElementById('modal-container');
 const closePopup = document.getElementById('modal-close');
+const featuredImage = document.getElementById('highlighted-image');
 
 const projectData = [
   {
@@ -192,3 +193,4 @@ for (let i = 0; i < projectData.length; i += 1) {
 }
 
 closePopup.addEventListener('click', closeModal);
+featuredImage.addEventListener('click', openModal);
