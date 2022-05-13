@@ -18,7 +18,6 @@ function fillInputs() {
     email.value = storagedData.email;
     message.value = storagedData.message;
    }
-
 }
 
 form.addEventListener('keyup', (e) => {
