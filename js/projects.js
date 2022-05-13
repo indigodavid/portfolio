@@ -110,7 +110,7 @@ function createModalLink(index) {
     anchor.classList.add('fs');
     anchor.id = 'featured-link';
   }
-  anchor.href = `javascript:openModal(${index})`;
+  anchor.href = `javascript:openModal(${0})`;
   anchor.innerText = 'See Project';
   return anchor;
 }
