@@ -4,31 +4,38 @@ const formError = document.querySelector('.form-error');
 const fullName = document.getElementById('full-name');
 const message = document.getElementById('message');
 
-const objectData = {
-  name: '',
-  email: '',
-  message: '',
-} 
+let objectData = {};
 
 function storeData() {
   const data = JSON.stringify(objectData);
-  localStorage.setItem(data);
+  localStorage.setItem('data', data);
 }
 
 function fillInputs() {
-  objectData = JSON.parse(localStorage.getItem('data'));
   fullName.value = objectData.name;
   email.value = objectData.email;
-  message.innerHTML = objectData.message;
+  message.value = objectData.message;
 }
 
-fullName.addEventListener()
-
-if(!localStorage.getItem('data')) {
+form.addEventListener('keyup', (e) => {
+  if (fullName.value) {
+    objectData.name = fullName.value;
+  }
+  if (email.value) {
+    objectData.email = email.value;
+  }
+  if (message.value) {
+    objectData.message = message.value;
+  }
   storeData();
-} else {
-  fillInputs();
-}
+});
+
+form.addEventListener('load', (e) => {
+  let objectData = JSON.parse(localStorage.getItem('data'));
+  if(objectData) {
+    fillInputs();
+  }
+});
 
 //LowerCase Validator
 form.addEventListener('submit', (e) => {
