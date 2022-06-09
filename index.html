@@ -1,150 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>David Vera's Portfolio</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/desktop-style.css" media="screen and (min-width: 768px)">
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link
-    rel="stylesheet"
-    href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
-    crossorigin="anonymous"
-    />
-    <link href="https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>David Vera's Portfolio</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/desktop-style.css" media="screen and (min-width: 768px)">
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link
+  rel="stylesheet"
+  href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+  integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+  crossorigin="anonymous"
+  />
+  <link href="https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="menu-bar">
-        <a id="logo" href="#" class="name">David Vera</a>
-        <button id="menu" type="button"> </button>
-        <nav>
-          <ul id="navigation-links">
-            <li><a class="nav-link" href="#recent">Portfolio</a></li>
-            <li><a class="nav-link" href="#about-me">About</a></li>
-            <li><a class="nav-link" href="#contact-form">Contact</a></li>
-            <li id="envelope"><a class="nav-link" href="#contact-form"><i class="fas fa-envelope "></i></a></li>
-            <li id="white-bar"><span> </span></li>
+  <header class="menu-bar">
+    <a id="logo" href="#" class="name">David Vera</a>
+    <button id="menu" type="button"> </button>
+    <nav>
+      <ul id="navigation-links">
+        <li><a class="nav-link" href="#recent">Portfolio</a></li>
+        <li><a class="nav-link" href="#about-me">About</a></li>
+        <li><a class="nav-link" href="#contact-form">Contact</a></li>
+        <li id="envelope"><a class="nav-link" href="#contact-form"><i class="fas fa-envelope "></i></a></li>
+        <li id="white-bar"><span> </span></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="intro">
+    <h1>Hey There. I'm David</h1>
+    <h2>I'm a Software Developer</h2>
+    <p>I can help you build a product, feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don't hestiate to contact me.</p>
+    <ul class="social-links">
+      <li><a href="#"><img src="./images/github.svg" alt="GitHub"></a></li>
+      <li><a href="#"><img src="./images/linked-in.svg" alt="LinkedIn"></a></li>
+      <li><a href="#"><img src="./images/peace.svg" alt="AngelList"></a></li>
+      <li><a href="#"><img src="./images/twitter.svg" alt="Twitter"></a></li>
+      <li><a href="#"><img src="./images/m.svg" alt="Medium"></a></li>
+    </ul>
+  </section>
+  <main>
+    <div id="recent" class="recent-header">
+      <div><h2>My Recent Works</h2></div>
+      <hr>
+    </div>
+    <section id="featured-project">
+      <div class="featured-image">
+        <img id="highlighted-image" src="images/featured-project.png" alt="Featured Project">
+      </div>
+      <div id="featured-content" class="content">
+        <!-- content generated in projects.js -->
+      </div>
+    </section>
+    <section id="projects">
+      <!-- content generated in projects.js -->
+    </section>
+    <section id="about-me">
+      <div class="about-head">
+        <h2>About me</h2>
+        <p>Hello I'm a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don't hestiate to contact me.</p>
+        <a href="#" class="button fs">Get My Resume</a>
+      </div>
+      <hr>
+      <ul class="about-skills">
+        <li class="lang"><span>&#9830;</span> Languages
+          <ul class="about-list">
+            <li>Javascript</li>
+            <li>Ruby</li>
+            <li>CSS</li>
+            <li>HTML</li>
           </ul>
-        </nav>
-    </header>
-    <section class="intro">
-      <h1>Hey There. I'm David</h1>
-      <h2>I'm a Software Developer</h2>
-      <p>I can help you build a product, feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don't hestiate to contact me.</p>
-      <ul class="social-links">
-         <li><a href="#"><img src="./images/github.svg" alt="GitHub"></a></li>
-         <li><a href="#"><img src="./images/linked-in.svg" alt="LinkedIn"></a></li>
-         <li><a href="#"><img src="./images/peace.svg" alt="AngelList"></a></li>
-         <li><a href="#"><img src="./images/twitter.svg" alt="Twitter"></a></li>
-         <li><a href="#"><img src="./images/m.svg" alt="Medium"></a></li>
+        </li>
+        <li class="frameworks"><span>◼︎</span> Frameworks
+          <ul class="about-list">
+            <li>Bootstrap</li>
+            <li>Ruby on Rails</li>
+            <li>RSPec</li>
+            <li>CapyBara</li>
+            <li>Selenium</li>
+          </ul>
+        </li>
+        <li class="skills"><span>●</span> Skills
+          <ul class="about-list">
+            <li>Codekit</li>
+            <li>GitHub</li>
+            <li>Codepen</li>
+            <li>Gitlab</li>
+            <li>Terminal</li>
+          </ul>
+        </li>
       </ul>
     </section>
-    <main>
-      <div id="recent" class="recent-header">
-        <div><h2>My Recent Works</h2></div>
-        <hr>
+    <section id="contact-form">
+      <div>
+        <h2>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
       </div>
-      <section id="featured-project">
+      <form id="form" action="https://formspree.io/f/mgedpkpr" method="POST">
+        <label for="full-name" class="hidden">Full Name</label>
+        <input aria-label="Full name" type="text" name="full-name" id="full-name" placeholder="Enter your full name please" maxlength="30" required>
+        <label for="email" class="hidden">Email</label>
+        <input aria-label="Email" type="email" name="email" id="email" placeholder="Enter your email address" required>
+        <label for="message" class="hidden">Message</label>
+        <textarea aria-label="Message" name="message" id="message" cols="25" rows="6" required maxlength="500" placeholder="Enter text here"></textarea>
+        <div class="form-error"></div>
+        <button type="submit" class="button">Get in touch</button>
+      </form>
+    </section>
+    <div id="end">
+      <ul class="social-links">
+        <li><a href="#"><img src="./images/github-dark.svg" alt="GitHub"></a></li>
+        <li><a href="#"><img src="./images/linked-in-dark.svg" alt="LinkedIn"></a></li>
+        <li><a href="#"><img src="./images/peace-dark.svg" alt="AngelList"></a></li>
+        <li><a href="#"><img src="./images/twitter-dark.svg" alt="Twitter"></a></li>
+        <li><a href="#"><img src="./images/m-dark.svg" alt="Medium"></a></li>
+      </ul>
+    </div>
+    <div id="modal-container" class="modal-container">
+      <div class="modal" id="modal">
+        <div class="modal-header">
+          <h2 id="modal-title">Data Dashboard Healthcare </h2>
+          <span class="modal-close" id ="modal-close">&times;</span>
+        </div>
+        <div id="modal-languages">
+          <!-- Automatically generated by projects.js -->
+        </div>
         <div class="featured-image">
-          <img id="highlighted-image" src="images/featured-project.png" alt="Featured Project">
+          <img id="project-image" src="images/featured-project.png" alt="Project Preview">
         </div>
-        <div id="featured-content" class="content">
-          <!-- content generated in projects.js -->
+        <div class="content">
+          <p id="modal-description"> A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard </p>
+          <div id="link-container" class="link-container">
+            <a id="live-link" class="button live-icon" href="#" target="new">See Live</a>
+            <a id="source-link" class="button source-icon" href="#" target="new">See Source</a>
+          </div>
         </div>
-      </section>
-      <section id="projects">
-        <!-- content generated in projects.js -->
-      </section>
-      <section id="about-me">
-        <div class="about-head">
-          <h2>About me</h2>
-          <p>Hello I'm a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don't hestiate to contact me.</p>
-          <a href="#" class="button fs">Get My Resume</a>
-        </div>
-        <hr>
-        <ul class="about-skills">
-          <li class="lang"><span>&#9830;</span> Languages
-            <ul class="about-list">
-              <li>Javascript</li>
-              <li>Ruby</li>
-              <li>CSS</li>
-              <li>HTML</li>
-            </ul>
-          </li>
-          <li class="frameworks"><span>◼︎</span> Frameworks
-            <ul class="about-list">
-              <li>Bootstrap</li>
-              <li>Ruby on Rails</li>
-              <li>RSPec</li>
-              <li>CapyBara</li>
-              <li>Selenium</li>
-            </ul>
-          </li>
-          <li class="skills"><span>●</span> Skills
-            <ul class="about-list">
-              <li>Codekit</li>
-              <li>GitHub</li>
-              <li>Codepen</li>
-              <li>Gitlab</li>
-              <li>Terminal</li>
-            </ul>
-          </li>
-        </ul>
-      </section>
-      <section id="contact-form">
-        <div>
-          <h2>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
-        </div>
-        <form id="form" action="https://formspree.io/f/mgedpkpr" method="POST">
-          <label for="full-name" class="hidden">Full Name</label>
-          <input aria-label="Full name" type="text" name="full-name" id="full-name" placeholder="Enter your full name please" maxlength="30" required>
-          <label for="email" class="hidden">Email</label>
-          <input aria-label="Email" type="email" name="email" id="email" placeholder="Enter your email address" required>
-          <label for="message" class="hidden">Message</label>
-          <textarea aria-label="Message" name="message" id="message" cols="25" rows="6" required maxlength="500" placeholder="Enter text here"></textarea>
-          <div class="form-error"></div>
-          <button type="submit" class="button">Get in touch</button>
-        </form>
-      </section>
-      <div id="end">
-        <ul class="social-links">
-          <li><a href="#"><img src="./images/github-dark.svg" alt="GitHub"></a></li>
-          <li><a href="#"><img src="./images/linked-in-dark.svg" alt="LinkedIn"></a></li>
-          <li><a href="#"><img src="./images/peace-dark.svg" alt="AngelList"></a></li>
-          <li><a href="#"><img src="./images/twitter-dark.svg" alt="Twitter"></a></li>
-          <li><a href="#"><img src="./images/m-dark.svg" alt="Medium"></a></li>
-        </ul>
       </div>
-
-      <div id="modal-container" class="modal-container">
-        <div class="modal" id="modal">
-          <div class="modal-header">
-            <h2 id="modal-title">Data Dashboard Healthcare </h2>
-            <span class="modal-close" id ="modal-close">&times;</span>
-          </div>
-          <div id="modal-languages">
-            <!-- Automatically generated by projects.js -->
-          </div>
-          <div class="featured-image">
-            <img id="project-image" src="images/featured-project.png" alt="Project Preview">
-          </div>
-          <div class="content">
-            <p id="modal-description"> A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard </p>
-            <div id="link-container" class="link-container">
-              <a id="live-link" class="button live-icon" href="#" target="new">See Live</a>
-              <a id="source-link" class="button source-icon" href="#" target="new">See Source</a>
-            </div>
-          </div>
-        </div>
-      </div> 
-    </main>
-
-    <script src="./js/index.js" ></script>
-    <script src="./js/projects.js" ></script>
-    <script src="./js/form.js" defer></script>
+    </div> 
+  </main>
+  <script src="./js/index.js" ></script>
+  <script src="./js/projects.js" ></script>
+  <script src="./js/form.js" defer></script>
 </body>
 </html>

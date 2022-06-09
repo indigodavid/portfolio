@@ -9,7 +9,7 @@ main > * {
 
 #envelope img {
   visibility: visible;
-  width: 21px;
+  width: 1.3rem;
   background-color: white;
 }
 
@@ -30,14 +30,14 @@ main > * {
 
 .intro > .social-links {
   position: absolute;
-  inset: auto 20px;
+  inset: auto 1.25rem;
   flex-direction: column;
 }
 
 #featured-project {
   display: flex;
   flex-direction: row;
-  margin-bottom: 30px;
+  margin-bottom: 2rem;
 }
 
 .fs {
@@ -96,9 +96,9 @@ main > * {
 
 .recent-header {
   display: flex;
-  gap: 20px;
+  gap: 1.25rem;
   align-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
 }
 
 .recent-header h2 {
@@ -107,14 +107,14 @@ main > * {
 
 .recent-header hr {
   flex: 2;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
 }
 
 #contact-form {
   display: flex;
   flex-direction: row;
-  gap: 20px;
+  gap: 1.25rem;
 }
 
 #contact-form h2 {
@@ -142,7 +142,7 @@ main > * {
 .modal {
   flex-direction: row;
   flex-wrap: wrap;
-  row-gap: 10px;
+  row-gap: 0.625rem;
 }
 
 .modal-header,
