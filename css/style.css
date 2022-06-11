@@ -256,7 +256,7 @@ button:disabled {
 
 .project1,
 .project4 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), transparent), url("../images/placeholder@2x.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), transparent), url("../images/placeholder@2x.png");
   background-position: center;
   background-repeat: repeat, no-repeat;
   background-size: cover;
@@ -264,7 +264,7 @@ button:disabled {
 
 .project2,
 .project5 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), transparent), url("../images/placeholder2.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), transparent), url("../images/placeholder2.png");
   background-position: center;
   background-repeat: repeat, no-repeat;
   background-size: cover;
@@ -272,7 +272,7 @@ button:disabled {
 
 .project3,
 .project6 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), transparent), url("../images/placeholder3.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), transparent), url("../images/placeholder3.png");
   background-position: center;
   background-repeat: repeat, no-repeat;
   background-size: cover;
@@ -344,6 +344,19 @@ button:disabled {
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
+}
+
+.featured-image {
+  padding: 4rem;
+  background-color: var(--color-pressed);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#highlighted-image,
+#project-image {
+  box-shadow: 0 0 5rem var(--color-text);
 }
 
 .content {
