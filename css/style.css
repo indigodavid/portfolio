@@ -256,7 +256,7 @@ button:disabled {
 
 .project1,
 .project4 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), transparent), url("../images/placeholder@2x.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), transparent), url("../images/dasik-thumbnail.jpg");
   background-position: center;
   background-repeat: repeat, no-repeat;
   background-size: cover;
@@ -264,7 +264,7 @@ button:disabled {
 
 .project2,
 .project5 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), transparent), url("../images/placeholder2.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), transparent), url("../images/dasik-thumbnail.jpg");
   background-position: center;
   background-repeat: repeat, no-repeat;
   background-size: cover;
@@ -272,7 +272,7 @@ button:disabled {
 
 .project3,
 .project6 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), transparent), url("../images/placeholder3.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), transparent), url("../images/dasik-thumbnail.jpg");
   background-position: center;
   background-repeat: repeat, no-repeat;
   background-size: cover;
