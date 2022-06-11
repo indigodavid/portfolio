@@ -334,6 +334,7 @@ button:disabled {
 .about-list {
   list-style: none;
   padding: 0;
+  padding-left: 2.65rem;
   text-align: center;
   font-size: 1.5rem;
   line-height: 2;
@@ -361,10 +362,6 @@ form {
   flex-direction: column;
   row-gap: 1.25rem;
   margin-bottom: 7.5rem;
-}
-
-form > * {
-  flex-basis: 100%;
 }
 
 form > input,
