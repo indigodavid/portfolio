@@ -180,7 +180,7 @@ main hr {
 .languages li {
   border-style: solid;
   border-color: #8993a4;
-  border-width: 1px;
+  border-width: 0.06rem;
   padding: 0.75rem;
   font-weight: 500;
 }
@@ -202,21 +202,21 @@ a.button:hover,
 button:hover {
   background-color: var(--color-negative);
   color: var(--color-accent);
-  border: 1px solid var(--color-accent);
+  border: 0.06rem solid var(--color-accent);
 }
 
 a.button:active,
 button:active {
   background-color: var(--color-pressed);
   color: var(--color-negative);
-  border: 1px solid var(--color-pressed);
+  border: 0.06rem solid var(--color-pressed);
 }
 
 a.button:disabled,
 button:disabled {
   background-color: var(--color-negative);
   color: var(--color-disabled);
-  border: 1px solid var(--color-disabled);
+  border: 0.06rem solid var(--color-disabled);
   padding: 0.75rem;
 }
 
@@ -308,7 +308,7 @@ button:disabled {
   font-size: 3.7rem;
   font-family: "Crete Round", serif;
   overflow: hidden;
-  border-right: 3px solid transparent;
+  border-right: 0.19rem solid transparent;
   white-space: nowrap;
   animation-name: typewriter, cursor;
   animation-duration: 2s, 0.75s;
@@ -381,7 +381,7 @@ form > input,
 form > textarea {
   font-family: "Inter", sans-serif;
   border: none;
-  border-bottom: var(--color-disabled) solid 1px;
+  border-bottom: var(--color-disabled) solid 0.06rem;
   padding: 0.75rem;
   font-size: 1rem;
 }
@@ -518,7 +518,7 @@ nav {
     font-size: 2rem;
     font-weight: 700;
     line-height: 3;
-    border-bottom: 1px solid #6f6c6b;
+    border-bottom: 0.06rem solid #6f6c6b;
     padding-left: 1.25rem;
   }
 
@@ -545,7 +545,7 @@ nav {
     margin-top: 2rem;
     margin-left: auto;
     margin-right: auto;
-    border-bottom: #000 solid 3px;
+    border-bottom: #000 solid 0.19rem;
     width: 30%;
   }
 
