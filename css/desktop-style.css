@@ -86,14 +86,6 @@ main > * {
   background-size: cover;
 }
 
-.project1 > * {
-  display: none;
-}
-
-.project1 > a {
-  display: block;
-}
-
 .recent-header {
   display: flex;
   gap: 1.25rem;

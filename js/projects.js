@@ -6,6 +6,30 @@ const featuredImage = document.getElementById('highlighted-image');
 
 const projectData = [
   {
+    name: 'Metropolitan Museum of Art',
+    image: './images/museum-thumbnail.jpg',
+    description: 'This project displays the art collection using the Metropolitan Museum of Art API. It queries the artworks using a search bar and you can display the items in a popup. Contains testing with JEST.',
+    languages: [
+      'WebPack',
+      'CSS',
+      'JavaScript',
+    ],
+    liveUrl: 'https://indigodavid.github.io/metropolitan-museum-of-art/',
+    sourceUrl: 'https://github.com/indigodavid/metropolitan-museum-of-art',
+  },
+  {
+    name: 'Math Magicians',
+    image: './images/math-magicians-thumbnail.jpg',
+    description: 'This project contains a Calculator App using React. The project is structured as a Single Page Application using React Virtual DOM manipulation. It also uses React Router and React Icons. It\'s deployed using Heroku and Netlify.',
+    languages: [
+      'React',
+      'CSS',
+      'JavaScript',
+    ],
+    liveUrl: 'https://dvc-math-magicians.netlify.app/',
+    sourceUrl: 'https://github.com/indigodavid/math-magicians',
+  },
+  {
     name: 'Dasik Band Events Page 2022',
     image: './images/dasik-thumbnail.png',
     description: 'This project contains the information and events for Dasik Band. This project is fully responsive and links to the audio files of the band. It also serves as an SPK to display the band\'s material to stations and specialized media.',
@@ -42,18 +66,7 @@ const projectData = [
     liveUrl: 'https://indigodavid.github.io/awesome-books/',
     sourceUrl: 'https://github.com/indigodavid/awesome-books',
   },
-  {
-    name: 'Personal Portfolio',
-    image: './images/portfolio-thumbnail.png',
-    description: 'This repository contains an web app that allows to add and remove book\'s data using Javascript, taking advantage of ES6 conventions.',
-    languages: [
-      'HTML',
-      'CSS',
-      'JavaScript',
-    ],
-    liveUrl: 'https://indigodavid.github.io/portfolio/',
-    sourceUrl: 'https://github.com/indigodavid/portfolio',
-  },
+  
 ];
 
 function getH2(title) {
