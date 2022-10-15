@@ -6,6 +6,18 @@ const featuredImage = document.getElementById('highlighted-image');
 
 const projectData = [
   {
+    name: 'World Bank GDP App',
+    image: './images/world-bank-gdp-thumbnail.jpg',
+    description: 'This project displays the art collection using the Metropolitan Museum of Art API. It queries the artworks using a search bar and you can display the items in a popup. Contains testing with JEST.This is a SPA (Single Page App) that retrieves the GDP data from the World Bank API. The site is developed using React for the frontend, Redux to keep the state of the App, testing with JEST and the React Testing Library, and style using SASS.',
+    languages: [
+      'React',
+      'SASS',
+      'JavaScript',
+    ],
+    liveUrl: 'https://dv-world-bank-gdp-app.netlify.app',
+    sourceUrl: 'https://github.com/indigodavid/world-bank-gdp-app',
+  },
+  {
     name: 'Metropolitan Museum of Art',
     image: './images/museum-thumbnail.jpg',
     description: 'This project displays the art collection using the Metropolitan Museum of Art API. It queries the artworks using a search bar and you can display the items in a popup. Contains testing with JEST.',
@@ -66,7 +78,6 @@ const projectData = [
     liveUrl: 'https://indigodavid.github.io/awesome-books/',
     sourceUrl: 'https://github.com/indigodavid/awesome-books',
   },
-  
 ];
 
 function getH2(title) {
