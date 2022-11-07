@@ -6,6 +6,19 @@ const featuredImage = document.getElementById('highlighted-image');
 
 const projectData = [
   {
+    name: 'ezCar',
+    image: './images/ezcar-thumbnail.png',
+    description: 'This project displays the art collection using the Metropolitan Museum of Art API. It queries the artworks using a search bar and you can display the items in a popup. Contains testing with JEST.This is a SPA (Single Page App) that retrieves the GDP data from the World Bank API. The site is developed using React for the frontend, Redux to keep the state of the App, testing with JEST and the React Testing Library, and style using SASS.',
+    languages: [
+      'React',
+      'Tailwind CSS',
+      'Redux',
+      'Rails API',
+    ],
+    liveUrl: 'https://ezcar.netlify.app',
+    sourceUrl: 'https://github.com/indigodavid/ezCar_frontend',
+  },
+  {
     name: 'World Bank GDP App',
     image: './images/world-bank-gdp-thumbnail.jpg',
     description: 'This project displays the art collection using the Metropolitan Museum of Art API. It queries the artworks using a search bar and you can display the items in a popup. Contains testing with JEST.This is a SPA (Single Page App) that retrieves the GDP data from the World Bank API. The site is developed using React for the frontend, Redux to keep the state of the App, testing with JEST and the React Testing Library, and style using SASS.',
