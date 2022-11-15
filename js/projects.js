@@ -8,7 +8,7 @@ const projectData = [
   {
     name: 'ezCar',
     image: './images/ezcar-thumbnail.png',
-    description: 'This project displays the art collection using the Metropolitan Museum of Art API. It queries the artworks using a search bar and you can display the items in a popup. Contains testing with JEST.This is a SPA (Single Page App) that retrieves the GDP data from the World Bank API. The site is developed using React for the frontend, Redux to keep the state of the App, testing with JEST and the React Testing Library, and style using SASS.',
+    description: 'The backend was developed as an API using Ruby On Rails. It allows user authentication via Devise and JWT. It allows authenticated users to reserve a car from the database and records the reservation information. It features role-based authorization, allowing admin users to create or remove cars from the Postgres database. It also enables users to authenticate to a service to allow image uploads. The Frontend was developed using React, Tailwind CSS, and Redux Toolkit.',
     languages: [
       'React',
       'Tailwind CSS',
@@ -19,9 +19,21 @@ const projectData = [
     sourceUrl: 'https://github.com/indigodavid/ezCar_frontend',
   },
   {
+    name: 'ezPay',
+    image: './images/ezpay-thumbnail.png',
+    description: 'This application uses Rails CRUD capabilities to allow users to categorize and add their transactions in a web UI. It uses gems that allow users to sign up, confirm their email addresses, and use the application to store their expenses. For now, its full features are only usable on a local environment',
+    languages: [
+      'Ruby On Rails',
+      'Tailwind CSS',
+      'Devise',
+    ],
+    liveUrl: 'https://ezpay-production.up.railway.app/',
+    sourceUrl: 'https://github.com/indigodavid/ezpay',
+  },
+  {
     name: 'World Bank GDP App',
     image: './images/world-bank-gdp-thumbnail.jpg',
-    description: 'This project displays the art collection using the Metropolitan Museum of Art API. It queries the artworks using a search bar and you can display the items in a popup. Contains testing with JEST.This is a SPA (Single Page App) that retrieves the GDP data from the World Bank API. The site is developed using React for the frontend, Redux to keep the state of the App, testing with JEST and the React Testing Library, and style using SASS.',
+    description: 'This is a SPA (Single Page App) that retrieves the GDP data from the World Bank API. The site is developed using React for the frontend, Redux to keep the state of the App, testing with JEST and the React Testing Library, and style using SASS.',
     languages: [
       'React',
       'SASS',
