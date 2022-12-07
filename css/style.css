@@ -139,6 +139,14 @@ main hr {
   animation-name: blur-white;
   animation-duration: 3s;
   animation-timing-function: ease-in-out;
+  z-index: 10;
+}
+
+.intro h2 a {
+  color: var(--color-accent);
+  font-weight: 900;
+  font-size: 1.5rem;
+  text-decoration: underline;
 }
 
 .intro p,
